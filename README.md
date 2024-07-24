@@ -1,1 +1,3 @@
-# gen-ai-hackathon-aws
+# Generative AI Hackathon AWS
+
+
