@@ -42,7 +42,7 @@ pip install -r requirements.txt
 To begin, clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/generative-ai-hackathon-aws.git
+git clone https://github.com/SaschaHeyer/gen-ai-hackathon-aws.git
 cd generative-ai-hackathon-aws
 ```
 
