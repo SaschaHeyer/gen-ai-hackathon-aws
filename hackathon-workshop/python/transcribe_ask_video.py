@@ -83,9 +83,9 @@ def summarize_transcription(transcript_text):
 
 # Example usage
 video_file_uri = 's3://bedrock-doit-demo/What is AWS_ _ Amazon Web Services.mp4'
-job_name = 'transcribe3'
+job_name = 'transcribe4'
 bucket_name = 'bedrock-doit-demo'
-transcription_file_name = 'transcription_3.txt'
+transcription_file_name = 'transcription_4.txt'
 
 try:
     # Transcribe video
