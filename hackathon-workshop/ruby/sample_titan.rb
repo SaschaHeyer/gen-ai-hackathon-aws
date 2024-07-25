@@ -3,10 +3,10 @@ require 'json'
 
 # Initialize the Bedrock client using the default configuration
 client = Aws::BedrockRuntime::Client.new(
-  region: 'us-west-2'  # Specified region
+  region: 'us-west-2',  # Specified region
   #region: 'eu-central-1',
   #optional you can also use the AWS CLI and it will be fetched automatically
-  credentials: Aws::Credentials.new('your-access-key-id', 'your-secret-access-key')
+  #credentials: Aws::Credentials.new('your-access-key-id', 'your-secret-access-key')
 )
 
 # Define the parameters for the invoke_model method
