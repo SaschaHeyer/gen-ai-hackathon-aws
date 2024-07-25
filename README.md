@@ -36,6 +36,7 @@ pip install -r requirements.txt
 | `multimodal-claude.py`               | Multimodal AI with Claude                           |
 | `prompt-management.ipynb`            | Managing prompts                  |
 | `rag_1.ipynb`                        | RetrieveAndGenerate API - Chat with your documents              |
+| `transcribe_ask_video.py`                        | Transcribe video and use Titan to summarize it              |
 
 ## Getting Started
 

@@ -49,7 +49,7 @@ def summarize_transcription(transcript_text):
         region_name='us-west-2'
     )
 
-    prompt_data = f"""you are a experienced video summarizer I provide you a transcript and you summarize it. 
+    prompt_data = f"""you are a experienced video analyzer I provide you a transcript and you summarize it with bullet points. 
 
     Here is the transcript of the video:
     {transcript_text}
@@ -83,9 +83,9 @@ def summarize_transcription(transcript_text):
 
 # Example usage
 video_file_uri = 's3://bedrock-doit-demo/What is AWS_ _ Amazon Web Services.mp4'
-job_name = 'transcribe2'
+job_name = 'transcribe3'
 bucket_name = 'bedrock-doit-demo'
-transcription_file_name = 'transcription_2.txt'
+transcription_file_name = 'transcription_3.txt'
 
 try:
     # Transcribe video
