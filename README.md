@@ -24,6 +24,7 @@ pip install -r requirements.txt
 
 ## Files and Notebooks
 
+### /python
 | File/Notebook                        | Description                                         |
 |--------------------------------------|-----------------------------------------------------|
 | `bedrock_api.py`                     | Overview of Bedrock API usage no SDK                       |
@@ -37,6 +38,14 @@ pip install -r requirements.txt
 | `prompt-management.ipynb`            | Managing prompts                  |
 | `rag_1.ipynb`                        | RetrieveAndGenerate API - Chat with your documents              |
 | `transcribe_ask_video.py`                        | Transcribe video and use Titan to summarize it              |
+
+### /ruby
+| File/Notebook                        | Description                                         |
+|--------------------------------------|-----------------------------------------------------|
+| `bedrock_introduction_titan.rb`      | Introduction to Bedrock Titan                       |
+| `multimodal-claude.rb`               | Multimodal AI with Claude                           |
+
+
 
 ## Getting Started
 
