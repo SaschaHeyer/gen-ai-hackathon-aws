@@ -13,6 +13,13 @@ Run the following again
 aws configure
 ````
 
+alternative
+If switching from temporary IAM role credentials to IAM user credentials, ensure AWS_SESSION_TOKEN, which is only used for temporary credentials, is no longer set:
+
+````
+unset AWS_SESSION_TOKEN # unset environment variable
+````
+
 ## Converse API vs Invoke API
 
 https://aws.amazon.com/about-aws/whats-new/2024/05/amazon-bedrock-new-converse-api
