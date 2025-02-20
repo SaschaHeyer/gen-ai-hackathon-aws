@@ -1,0 +1,8 @@
+{
+    "input_tokens": 32,
+    "output_tokens": 95,
+    "total_tokens": 127,
+    "input_cost": 9.6e-05,
+    "output_cost": 0.001425,
+    "total_cost": 0.001521
+}

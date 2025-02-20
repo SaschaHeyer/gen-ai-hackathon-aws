@@ -1,0 +1,17 @@
+#https://github.com/aws/deep-learning-containers/blob/master/available_images.md
+FROM 763104351884.dkr.ecr.us-west-2.amazonaws.com/pytorch-inference:2.4.0-cpu-py311-ubuntu22.04-ec2
+
+# Install Flask and Gunicorn for serving the model
+COPY requirements.txt /opt/ml/requirements.txt
+RUN pip install -r /opt/ml/requirements.txt
+
+# Copy the app script
+COPY app.py /opt/ml/model/code/app.py
+
+# Define the entry point to run Gunicorn and serve Flask
+#ENTRYPOINT ["gunicorn", "--timeout", "60", "-k", "gevent", "-b", "0.0.0.0:8080", "app:app"]
+
+#ENTRYPOINT ["gunicorn", "--timeout", "60", "-b", "0.0.0.0:8080", "app:app"]
+
+# Set the entry point to run Flask directly
+ENTRYPOINT ["python", "/opt/ml/model/code/app.py"]

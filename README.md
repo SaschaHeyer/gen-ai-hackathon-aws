@@ -14,6 +14,9 @@ To get started, you'll need to set up your environment. Ensure you have the foll
 
 - Python 3.8 or higher
 - AWS CLI configured with your credentials
+
+1. `aws configure`
+
 - Necessary Python libraries (listed in `requirements.txt`)
 
 Install the required libraries using pip:

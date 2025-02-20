@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+
+gem 'sinatra'
+gem 'aws-sdk-bedrockruntime'
+gem 'nokogiri'
+gem "rackup", "~> 2.1"
