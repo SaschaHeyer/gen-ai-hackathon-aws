@@ -1,4 +1,3 @@
-import json
 import boto3
 
 client = boto3.client(
@@ -7,7 +6,7 @@ client = boto3.client(
 )
 MODEL_ID = "us.amazon.nova-pro-v1:0"
 
-with open('2.pdf', "rb") as file:
+with open('documents/2.pdf', "rb") as file:
     doc_bytes = file.read()
 
 messages =[
@@ -68,8 +67,5 @@ model_response = client.converse(
     modelId=MODEL_ID, 
     messages=messages, 
     inferenceConfig=model_parameter)
-
-print("\n[Full Response]")
-print(json.dumps(model_response, indent=2))
 
 print(model_response['output']['message']['content'][0]['text'])
